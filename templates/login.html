@@ -1,0 +1,82 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar sesión - Chat Seguro</title>
+    <style>
+        /* Contenedor principal que centra el formulario en la pantalla */
+        .container {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        /* Estilos para el formulario */
+        form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        /* Estilos para el encabezado del formulario */
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+        }
+        /* Estilos para los campos de entrada de usuario y contraseña */
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* Estilos para el botón de enviar */
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #0084ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+         /* Cambio de color del botón cuando se pasa el mouse */
+        button:hover {
+            background: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal para centrar el formulario -->
+    <div class="container">
+        
+        <!-- Formulario de inicio de sesión con método POST para enviar datos -->
+        <form method="POST" action="/">
+            <h1>Iniciar sesión</h1>  <!-- Título del formulario -->
+            
+            <!-- Campo de entrada para el nombre de usuario -->
+            <div>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <!-- Campo de entrada para la contraseña -->
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+             <!-- Botón para enviar el formulario -->
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+</body>
+</html>

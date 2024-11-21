@@ -44,7 +44,7 @@ Este proyecto implementa un protocolo de comunicación seguro utilizando Flask y
 
 ## Ejemplo de Usuarios Preconfigurados
 
-- **Usuario**: `ximena` | **Contraseña**: `1234`
+- **Usuario**: `Ximena` | **Contraseña**: `1234`
 - **Usuario**: `alan` | **Contraseña**: `123456`
 
 ## Seguridad
